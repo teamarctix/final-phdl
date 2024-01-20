@@ -18,7 +18,8 @@ def extract_playlist_id(url):
     parsed_url = urlparse(url)
     if "playlist" in parsed_url.path:
         query_params = parse_qs(parsed_url.query)
-        return query_params.get('list', [None])[0]
+        if 'list' in query_params:
+            return query_params['list'][0]
     return None
 
 def download_content(url, save_path):
@@ -55,3 +56,4 @@ if __name__ == "__main__":
 
     with app:
         upload_videos(app, channel_id, folder_path)
+        
