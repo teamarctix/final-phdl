@@ -18,8 +18,9 @@ def extract_playlist_id(url):
     parsed_url = urlparse(url)
     if "playlist" in parsed_url.path:
         query_params = parse_qs(parsed_url.query)
-        if 'list' in query_params:
-            return query_params['list'][0]
+        playlist_id = query_params.get('list', [None])[0]
+        if playlist_id:
+            return playlist_id
     return None
 
 def download_content(url, save_path):
