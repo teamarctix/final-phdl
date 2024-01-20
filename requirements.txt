@@ -5,3 +5,4 @@ tgcrypto
 vcsi
 yt-dlp
 ffmpeg
+pyrogram
