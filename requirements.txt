@@ -1,3 +1,7 @@
-bs4
-requests
-mutagen
+pyrofork==2.2.11
+beautifulsoup4
+hurry.filesize
+tgcrypto
+vcsi
+yt-dlp
+ffmpeg
