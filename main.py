@@ -53,7 +53,7 @@ if __name__ == "__main__":
     app = initialize_client()
 
     folder_path = "Downloads"
-    video_url = 'https://www.pornhub.com/playlist/4758401'
+    video_url = 'https://youtube.com/playlist?list=PL3b0A8gfzTYUV1KbrgTHC_9duOHtGjjRc&si=Ff0rTfcpTUEiBAVs'
 
     download_content(video_url, folder_path)
 
