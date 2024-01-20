@@ -16,12 +16,9 @@ def resolve_channel_id(app, channel_id):
 
 def extract_playlist_id(url):
     parsed_url = urlparse(url)
-    if "playlist" in parsed_url.path:
-        query_params = parse_qs(parsed_url.query)
-        playlist_id = query_params.get('list', [None])[0]
-        if playlist_id:
-            return playlist_id
-    return None
+    query_params = parse_qs(parsed_url.query)
+    return query_params.get('list', [None])[0]
+
 
 def download_content(url, save_path):
     options = {
