@@ -52,7 +52,7 @@ def download_content(url, save_path):
 if __name__ == "__main__":
     app = initialize_client()
 
-    folder_path = "/data/data/com.termux/files/home/newpr/Downloads"
+    folder_path = "Downloads"
     video_url = 'https://www.pornhub.com/playlist/4758401'
 
     download_content(video_url, folder_path)
