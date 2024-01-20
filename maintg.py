@@ -32,7 +32,7 @@ def upload_videos(app, channel_id, folder_path):
 
 def download_content(url, save_path):
     options = {
-        'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4',
+        'format': 'bestvideo[height=360]+bestaudio/best',
         'outtmpl': os.path.join(save_path, '%(title)s.%(ext)s'),
         'writethumbnail': False,
         'postprocessors': [{
