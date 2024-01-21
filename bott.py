@@ -18,7 +18,7 @@ TELEGRAM_API_HASH = 'b1a1fc3dc52ccc91781f33522255a880'
 
 # YouTube configuration
 PLAYLIST_URL = 'https://youtube.com/playlist?list=PL3b0A8gfzTYWlc521bm7R2LibJRwcxidd&si=RYt6WJ9i25btrBFN'
-VIDEO_QUALITY = 'bestvideo+bestaudio/best'
+VIDEO_QUALITY = 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'
 
 # Download configuration
 OUTPUT_PATH = 'downloads'
