@@ -20,4 +20,7 @@ jobs:
         pip install -r requirements.txt  # Replace with your actual requirements file if needed
 
     - name: Run Python App
+    env:
+        #PLAYLIST_URL: ${{ secrets.PLAYLIST_URL }}
+        PLAYLIST_URL: https://www.pornhub.com/playlist/80286461
       run: python bott.py
