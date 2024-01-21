@@ -1,0 +1,20 @@
+name: Python App Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run_python_app:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt  # Replace with your actual requirements file if needed
+
+    - name: Run Python App
+      run: python bott.py
