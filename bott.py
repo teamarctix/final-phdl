@@ -12,12 +12,12 @@ logger = logging.getLogger(__name__)
 
 # Your Telegram configuration
 TELEGRAM_BOT_TOKEN = '6596160785:AAEQBzgwKJ4LRg9n14bJMvkaKw4WGIDTonA'
-TELEGRAM_CHANNEL_ID = -1002034630043  # Replace with your actual channel ID
-TELEGRAM_API_ID = 11405252  # Replace with your actual API ID
+TELEGRAM_CHANNEL_ID = -1002034630043 
+TELEGRAM_API_ID = 11405252 
 TELEGRAM_API_HASH = 'b1a1fc3dc52ccc91781f33522255a880'
 
 # YouTube configuration
-PLAYLIST_URL = 'https://youtube.com/playlist?list=PL3b0A8gfzTYWlc521bm7R2LibJRwcxidd&si=RYt6WJ9i25btrBFN'
+PLAYLIST_URL = os.getenv('PLAYLIST_URL', 'https://youtube.com/playlist?list=PL3b0A8gfzTYWlc521bm7R2LibJRwcxidd&si=RYt6WJ9i25btrBFN')
 VIDEO_QUALITY = 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'
 
 # Download configuration
