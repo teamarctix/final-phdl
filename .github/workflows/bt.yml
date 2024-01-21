@@ -5,7 +5,7 @@ on:
 
 jobs:
   run_python_app:
-     runs-on: windows-latest
+    runs-on: windows-latest
 
     steps:
     - name: Checkout Repository
@@ -20,6 +20,6 @@ jobs:
         pip install -r requirements.txt  # Replace with your actual requirements file if needed
 
     - name: Run Python App
-    env:
+      env:
         PLAYLIST_URL: ${{ secrets.PLAYLIST_URL }}
       run: python bott.py
