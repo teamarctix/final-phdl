@@ -1,1 +1,1 @@
-worker: python pllink.py
+worker: python bott.py
