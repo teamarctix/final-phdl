@@ -21,6 +21,5 @@ jobs:
 
     - name: Run Python App
     env:
-        #PLAYLIST_URL: ${{ secrets.PLAYLIST_URL }}
-        PLAYLIST_URL: https://www.pornhub.com/playlist/80286461
+        PLAYLIST_URL: ${{ secrets.PLAYLIST_URL }}
       run: python bott.py
