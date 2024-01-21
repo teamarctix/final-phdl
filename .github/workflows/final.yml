@@ -1,4 +1,4 @@
-name: Python App Workflow
+name: it can download
 
 on:
   workflow_dispatch:
