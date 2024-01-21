@@ -17,4 +17,5 @@ jobs:
         pip install -r requirements.txt  # Replace with your actual requirements file if needed
 
     - name: Run Python App
-      run: python maintg.py
+      #run: python maintg.py
+      run: python pllink.py
