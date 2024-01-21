@@ -13,10 +13,9 @@ def save_links_to_file(links, filename='links.txt'):
         file.write('\n'.join(links))
 
 # Set your Telegram API credentials
-api_id = "11405252"
+api_id = 11405252
 api_hash = "b1a1fc3dc52ccc91781f33522255a880"
 bot_token = "6596160785:AAEQBzgwKJ4LRg9n14bJMvkaKw4WGIDTonA"
-channel_id = "-1002034630043"
 
 
 # Extract links and save them to a file
@@ -29,6 +28,6 @@ app = Client('my_bot', api_id, api_hash, bot_token=bot_token)
 
 # Send the file to the Telegram channel
 with app:
-    app.send_document(channel_id, 'links.txt', caption='Playlist links')
+    app.send_document(-1002034630043, 'links.txt', caption='Playlist links')
 
 print(f"Playlist links sent to the Telegram channel.")
