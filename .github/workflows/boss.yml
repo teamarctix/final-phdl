@@ -1,0 +1,26 @@
+name: download and send to telegram
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run_python_app:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up FFmpeg
+      uses: FedericoCarboni/setup-ffmpeg@v3
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt  # Replace with your actual requirements file if needed
+
+    - name: Run Python App
+    env:
+        #PLAYLIST_URL: ${{ secrets.PLAYLIST_URL }}
+        PLAYLIST_URL: https://www.pornhub.com/playlist/80286461
+      run: python bott.py
