@@ -79,6 +79,9 @@ def download_video(url, semaphore=None):
         'quiet': False,
         'outtmpl': f'{OUTPUT_PATH}/%(title)s.%(ext)s',
         'format': VIDEO_QUALITY,
+        'nooverwrites': True,
+        'no_warnings': False,
+        'ignoreerrors': True,
     }
 
     try:
